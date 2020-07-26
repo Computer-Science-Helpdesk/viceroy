@@ -1,0 +1,29 @@
+permissions:
+  - Admin
+  - Reasonable
+  - Moderate
+  - Unreasonable
+roles: 
+  - League
+  - Minecraft
+channelTypes: 
+  - Voice
+  - Text
+channels: 
+  - General: 
+    - Voice
+    - Unreasonable
+  - general: 
+    - Text
+    - Unreasonable
+  - league: 
+    - Text
+    - Moderate
+    - League
+  - Minecraft:
+    - Voice
+    - Unreasonable
+    - Minecraft
+  - minecraft:
+    - Text
+    - Moderate
