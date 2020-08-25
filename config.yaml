@@ -1,4 +1,4 @@
-permissions:
+labeledRoles:
   - Admin
   - Reasonable
   - Moderate
@@ -6,24 +6,39 @@ permissions:
 roles: 
   - League
   - Minecraft
+protectedRoles:
+  - "@everyone"
+  - Viceroy
 channelTypes: 
   - Voice
   - Text
 channels: 
   - General: 
-    - Voice
-    - Unreasonable
+      permissions: 
+        Admin: all
+        Reasonable: general
+        Moderate: general
+        Unreasonable: general
+      type: Voice
   - general: 
-    - Text
-    - Unreasonable
+      permissions: 
+        Admin: all
+        Reasonable: general
+        Moderate: general
+        Unreasonable: general
+      type: Text
   - league: 
-    - Text
-    - Moderate
-    - League
+      permissions: 
+        Admin: all
+        League: general
+      type: Text
   - Minecraft:
-    - Voice
-    - Unreasonable
-    - Minecraft
+      permissions: 
+        Admin: all
+        Minecraft: general
+      type: Voice
   - minecraft:
-    - Text
-    - Moderate
+      permissions: 
+        Admin: all
+        Minecraft: general
+      type: Text
